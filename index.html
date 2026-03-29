@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fatisa — Turkish Restaurant, Batumi</title>
+  <meta name="description" content="Fatisa — Authentic Turkish restaurant in Batumi, Georgia. Halal-certified cuisine, fresh pide, baklava, and traditional Turkish breakfast. Est. 2020.">
+  <meta property="og:title" content="Fatisa — Turkish Restaurant, Batumi">
+  <meta property="og:description" content="Authentic flavours of Anatolia, lovingly prepared in the heart of Batumi.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Nunito:wght@800&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a class="nav-logo" href="#hero">FATISA <span>·</span></a>
+  <div class="nav-links">
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#menu" data-i18n="nav_menu">Menu</a>
+    <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn active" onclick="setLang('en')" aria-label="English">EN</button>
+    <button class="lang-btn" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
+    <button class="lang-btn" onclick="setLang('ka')" aria-label="ქართული">ქა</button>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <a href="#about" data-i18n="nav_about">About</a>
+  <a href="#menu" data-i18n="nav_menu">Menu</a>
+  <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+  <a href="#contact" data-i18n="nav_contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  <canvas id="hero-particles"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Batumi, Georgia — Est. 2020</p>
+    <h1 class="hero-title">Fatisa<br><em>Turkish</em></h1>
+    <p class="hero-sub" data-i18n="hero_sub">Restaurant · Halal · Batumi</p>
+    <p class="hero-tagline" data-i18n="hero_tagline">Authentic flavours of Anatolia, lovingly prepared in the heart of Batumi.</p>
+    <div class="hero-cta">
+      <a href="#menu" class="btn btn-primary" data-i18n="hero_btn1">View Menu</a>
+      <a href="#contact" class="btn btn-outline" data-i18n="hero_btn2">Find Us</a>
+    </div>
+  </div>
+  <div class="hero-scroll" data-i18n="scroll">Scroll</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-image-wrap reveal">
+    <div class="about-image-placeholder">
+      <img src="images/interior.png" alt="Fatisa restaurant interior with warm lanterns and Ottoman décor" loading="lazy">
+    </div>
+  </div>
+  <div class="about-text reveal">
+    <p class="section-label" data-i18n="about_label">Our Story</p>
+    <h2 class="section-title" data-i18n="about_title">A Taste of<br>Turkey in Batumi</h2>
+    <p data-i18n="about_p1">Fatisa brings the warmth of Turkish hospitality to the heart of Batumi. Every dish is crafted from recipes passed down through generations — rich pides, silky menemen, and delicate baklava made fresh each morning.</p>
+    <p data-i18n="about_p2">Our kitchen uses only halal-certified ingredients, ensuring every guest dines with confidence and comfort. Whether you're stopping for a leisurely Turkish breakfast or an evening meal, we welcome you like family.</p>
+    <div class="about-stats">
+      <div>
+        <span class="stat-num" data-count="4.8">0</span>
+        <span class="stat-label" data-i18n="stat_rating">Rating</span>
+      </div>
+      <div>
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Halal</span>
+      </div>
+      <div>
+        <span class="stat-num">5+</span>
+        <span class="stat-label" data-i18n="stat_years">Years</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="menu-header reveal">
+    <div class="menu-title-area">
+      <p class="section-label" data-i18n="menu_label">What We Serve</p>
+      <h2 class="section-title" data-i18n="menu_title">Our Menu</h2>
+      <span class="halal-badge">✦ Halal Certified</span>
+    </div>
+    <div class="order-buttons">
+      <a href="https://wolt.com/ka/geo/batumi/restaurant/fatisa-turkish-restaurant?utm_source=googlemapreserved&utm_campaign=fatisa-turkish-restaurant&utm_content=68d67d9fcd61bf3f938e3f68&rwg_token=AFd1xnEdzOQnm6BZmviK9BBlTooHY5mtz1Q72gYzaMQVG1S9tsVz2sa2BVyApxDjNfUkwwQRxiCmYnc9YdoRhR02_GPQ5EIg2w%3D%3D" target="_blank" rel="noopener" class="btn-order btn-wolt">
+        Order on <span class="logo-wolt">Wolt</span>
+      </a>
+      <a href="https://glovoapp.com/ka/ge/batumi/stores/fatisa-restaurant-bat?utm_source=google&utm_medium=organic&utm_campaign=google_reserve_place_order_action" target="_blank" rel="noopener" class="btn-order btn-glovo">
+        Order on <span class="logo-glovo">Glovo<svg viewBox="0 0 24 24" width="0.7em" height="0.7em" fill="currentColor" style="vertical-align:top;margin-left:-2px;margin-top:2px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+      </a>
+    </div>
+  </div>
+  <div class="menu-tabs reveal" style="margin-top:2.5rem;">
+    <button class="menu-tab active" onclick="switchTab('breakfast')">Breakfast</button>
+    <button class="menu-tab" onclick="switchTab('mains')">Mains &amp; Soups</button>
+    <button class="menu-tab" onclick="switchTab('doner')">Döner</button>
+    <button class="menu-tab" onclick="switchTab('pide')">Pide &amp; Lahmacun</button>
+    <button class="menu-tab" onclick="switchTab('pizza')">Pizza &amp; Khachapuri</button>
+    <button class="menu-tab" onclick="switchTab('pasta')">Pasta &amp; Burgers</button>
+    <button class="menu-tab" onclick="switchTab('desserts')">Desserts</button>
+    <button class="menu-tab" onclick="switchTab('drinks')">Drinks</button>
+  </div>
+
+  <!-- BREAKFAST -->
+  <div id="panel-breakfast" class="menu-panel active reveal">
+    <div class="menu-item">
+      <div><div class="item-name">Breakfast Plate</div><div class="item-desc">Full breakfast for one person</div></div>
+      <div class="item-price">30 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-5314a72f-622a-49ca-8248-8b8090c9c625.jpeg" alt="Turkish Breakfast" loading="lazy"></div>
+      <div><div class="item-name">Turkish Breakfast (for 2)</div><div class="item-desc">Grand spread for two — cheeses, olives, eggs, honey, clotted cream, bread</div></div>
+      <div class="item-price">90 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Menemen</div><div class="item-desc">Scrambled eggs with peppers, tomatoes &amp; herbs</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Omelet Plate</div><div class="item-desc">Classic omelette served with sides</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Sunny Side Up Eggs</div><div class="item-desc">Simple &amp; classic</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Eggs with Sucuk</div><div class="item-desc">Fried eggs with spiced Turkish sausage</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Eggs with Cheese</div><div class="item-desc">Melted cheese with eggs</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Haşlanmış Yumurta</div><div class="item-desc">Boiled eggs</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+  </div>
+
+  <!-- MAINS & SOUPS -->
+  <div id="panel-mains" class="menu-panel">
+    <h3 class="menu-category-title">Soups</h3>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-7e68a27f-f899-4a4f-811e-8c483e9cd796.jpeg" alt="Ezogelin Soup" loading="lazy"></div>
+      <div><div class="item-name">Ezogelin Soup</div><div class="item-desc">Traditional Turkish red lentil &amp; bulgur soup</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-aebf386d-d187-465a-b92d-b1641d703140.jpeg" alt="Lentil Soup" loading="lazy"></div>
+      <div><div class="item-name">Lentil Soup</div><div class="item-desc">Classic red lentil with lemon &amp; cumin</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Main Courses</h3>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-bdac519f-caea-43e4-ab67-ada6bdf93f7f.jpeg" alt="Beef Ostri" loading="lazy"></div>
+      <div><div class="item-name">Beef Ostri</div><div class="item-desc">Braised beef in rich tomato sauce</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/da667467-bcce-4b9c-8361-369c5df5a932.jpeg" alt="Lobio" loading="lazy"></div>
+      <div><div class="item-name">Lobio</div><div class="item-desc">Georgian beans in the pot</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-07be6471-c441-4b8b-b9c6-027ffb2097ca.jpeg" alt="Ojakhuri" loading="lazy"></div>
+      <div><div class="item-name">Ojakhuri</div><div class="item-desc">With mushroom and vegetables</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-9f7ce20f-e315-4560-a288-5b3214bfdeb1.jpeg" alt="Shkmeruli" loading="lazy"></div>
+      <div><div class="item-name">Shkmeruli</div><div class="item-desc">Chicken in creamy garlic sauce</div></div>
+      <div class="item-price">35 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Salads &amp; Mezes</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Roka Salatası</div><div class="item-desc">Fresh arugula salad</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-75cf19ff-330f-4145-939f-9f3a813d22b8.jpeg" alt="Caesar Salad" loading="lazy"></div>
+      <div><div class="item-name">Caesar Salad</div></div>
+      <div class="item-price">20 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Georgian Salad</div></div>
+      <div class="item-price">13 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-04f3b38d-0736-434c-8a95-13afd5f0d884.jpeg" alt="Greek Salad" loading="lazy"></div>
+      <div><div class="item-name">Greek Salad</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Acılı Ezme</div><div class="item-desc">Spicy tomato paste</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-6b23ec59-cbb7-4d43-a015-06b0864d8392.jpeg" alt="Mixed Pickles" loading="lazy"></div>
+      <div><div class="item-name">Mixed Pickles</div></div>
+      <div class="item-price">5 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Appetizers</h3>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-714e57d8-5ed7-4546-b40b-6b17713b3ecf.jpeg" alt="Eggplant with Walnuts" loading="lazy"></div>
+      <div><div class="item-name">Eggplant with Walnuts</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Assorted Cheese</div></div>
+      <div class="item-price">16 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">French Fries</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Mexican Potatoes</div></div>
+      <div class="item-price">12 ₾</div>
+    </div>
+  </div>
+
+  <!-- DÖNER -->
+  <div id="panel-doner" class="menu-panel">
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-66a823ba-c6d1-4c0b-9f7c-1bbaa30f20df.jpeg" alt="Döner Plate" loading="lazy"></div>
+      <div><div class="item-name">Döner Plate</div><div class="item-desc">Served in bread</div></div>
+      <div class="item-price">20 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Doneruli</div><div class="item-desc">Special döner preparation</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">1.5 Portion Döner Plate</div></div>
+      <div class="item-price">30 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-fbcefab5-f5c4-4713-bdd3-0359947496ef.jpeg" alt="Döner on Rice" loading="lazy"></div>
+      <div><div class="item-name">Döner on Rice</div></div>
+      <div class="item-price">27 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">1.5 Portion Döner on Rice</div></div>
+      <div class="item-price">37 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-ec645fc4-b548-43a0-8bf9-91f65bf74e5e.jpeg" alt="Wrap Döner" loading="lazy"></div>
+      <div><div class="item-name">Wrap Döner</div><div class="item-desc">Döner wrapped in lavash</div></div>
+      <div class="item-price">20 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-c60e0482-d544-49aa-b4fa-68c56e939da6.jpeg" alt="İskender Kebab" loading="lazy"></div>
+      <div><div class="item-name">İskender Kebab</div><div class="item-desc">Sliced döner over bread with tomato sauce &amp; yoghurt</div></div>
+      <div class="item-price">35 ₾</div>
+    </div>
+  </div>
+
+  <!-- PIDE & LAHMACUN -->
+  <div id="panel-pide" class="menu-panel">
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-43f551c6-d626-4149-8bbe-0351113d1820.jpeg" alt="Lahmacun" loading="lazy"></div>
+      <div><div class="item-name">Lahmacun</div><div class="item-desc">Thin flatbread with spiced minced meat</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Cheese Pide</div><div class="item-desc">Boat-bread with melted cheese</div></div>
+      <div class="item-price">22 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Minced Meat Pide</div><div class="item-desc">Kıymalı pide</div></div>
+      <div class="item-price">22 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-f7aff715-cc92-4c25-aa09-e464f976a782.jpeg" alt="Cubed Meat Pide" loading="lazy"></div>
+      <div><div class="item-name">Cubed Meat Pide</div><div class="item-desc">Kuşbaşı pide with diced lamb</div></div>
+      <div class="item-price">27 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Minced Meat &amp; Cheese Pide</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Cubed Meat &amp; Cheese Pide</div></div>
+      <div class="item-price">30 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Sucuk &amp; Cheese Pide</div><div class="item-desc">Spiced sausage and melted cheese</div></div>
+      <div class="item-price">33 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-cad599bc-94c3-4137-8f0b-5e71dc59cd58.jpeg" alt="Mixed Pide" loading="lazy"></div>
+      <div><div class="item-name">Mixed Pide</div><div class="item-desc">Karışık — all the best toppings</div></div>
+      <div class="item-price">35 ₾</div>
+    </div>
+  </div>
+
+  <!-- PIZZA & KHACHAPURI -->
+  <div id="panel-pizza" class="menu-panel">
+    <h3 class="menu-category-title">Pizza</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Margherita</div></div>
+      <div class="item-price">23 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Pepperoni</div></div>
+      <div class="item-price">30 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Vegetarian</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Four Cheese</div></div>
+      <div class="item-price">27 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Mixed Pizza</div></div>
+      <div class="item-price">35 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Khachapuri</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Imeruli Khachapuri</div><div class="item-desc">Round cheese bread</div></div>
+      <div class="item-price">23 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Acharuli Khachapuri</div><div class="item-desc">Boat-shaped with egg &amp; butter</div></div>
+      <div class="item-price">20 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Megruli Khachapuri</div><div class="item-desc">Double-cheese crust</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+  </div>
+
+  <!-- PASTA & BURGERS -->
+  <div id="panel-pasta" class="menu-panel">
+    <h3 class="menu-category-title">Pasta</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Carbonara</div></div>
+      <div class="item-price">22 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Bolognese</div></div>
+      <div class="item-price">22 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Creamy Chicken Fettuccine</div></div>
+      <div class="item-price">25 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Creamy Mushroom Fettuccine</div></div>
+      <div class="item-price">23 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Creamy Chicken &amp; Mushroom Fettuccine</div></div>
+      <div class="item-price">27 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Creamy Prawns Fettuccine</div></div>
+      <div class="item-price">32 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Penne Arrabbiata</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Burgers</h3>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-803d5ad2-44c5-4f83-bb90-c4aa91834ab4.jpeg" alt="FatBurger" loading="lazy"></div>
+      <div><div class="item-name">FatBurger</div><div class="item-desc">House signature burger</div></div>
+      <div class="item-price">22 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">FatBurger Menu</div><div class="item-desc">Burger + fries + drink</div></div>
+      <div class="item-price">30 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Chicken Burger</div></div>
+      <div class="item-price">18 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Chicken Burger Menu</div><div class="item-desc">Burger + fries + drink</div></div>
+      <div class="item-price">26 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Khinkali</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Khinkali (4 piece)</div><div class="item-desc">Georgian dumplings</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+  </div>
+
+  <!-- DESSERTS -->
+  <div id="panel-desserts" class="menu-panel">
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-20d54619-a3ff-4768-b84e-bb025799cd4c.jpeg" alt="Sütlaç" loading="lazy"></div>
+      <div><div class="item-name">Sütlaç</div><div class="item-desc">Baked rice pudding</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Magnolia Pudding</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Tiramisu</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Supangle</div><div class="item-desc">Turkish chocolate pudding</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-8eacc86b-c325-42cb-8723-cfc81ac0d5c8.jpeg" alt="Trileçe" loading="lazy"></div>
+      <div><div class="item-name">Trileçe</div><div class="item-desc">Three-milk cake</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item has-image">
+      <div class="item-thumb"><img src="https://dyj6gt4964deb.cloudfront.net/images/crop-878dba60-5a71-4fbb-9ddd-0507432dba69.jpeg" alt="Baklava" loading="lazy"></div>
+      <div><div class="item-name">Baklava with Pistachio</div><div class="item-desc">2 pieces</div></div>
+      <div class="item-price">12 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Baklava with Walnut</div><div class="item-desc">2 pieces</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div id="panel-drinks" class="menu-panel">
+    <h3 class="menu-category-title">Hot Drinks</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Turkish Tea</div><div class="item-desc">Served in traditional tulip glass</div></div>
+      <div class="item-price">3 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Turkish Coffee</div></div>
+      <div class="item-price">5 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Georgian Coffee</div></div>
+      <div class="item-price">5 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Espresso</div></div>
+      <div class="item-price">6 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Double Espresso</div></div>
+      <div class="item-price">8 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Americano</div></div>
+      <div class="item-price">9 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Cappuccino</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Latte</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Cold Drinks</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Ayran</div><div class="item-desc">Chilled salted yoghurt drink</div></div>
+      <div class="item-price">4 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Bottled Water</div><div class="item-desc">330ml</div></div>
+      <div class="item-price">3 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Coca-Cola / Fanta / Sprite</div></div>
+      <div class="item-price">5 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Fuse Tea</div></div>
+      <div class="item-price">6 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Cappy Juice</div></div>
+      <div class="item-price">8 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Fresh Orange Juice</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Mineral Water</div></div>
+      <div class="item-price">5 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Wine</h3>
+    <div class="menu-item">
+      <div><div class="item-name">White Wine Glass</div></div>
+      <div class="item-price">12 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Red Wine Glass</div></div>
+      <div class="item-price">15 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">White Wine Bottle</div></div>
+      <div class="item-price">50 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Red Wine Bottle</div></div>
+      <div class="item-price">60 ₾</div>
+    </div>
+    <h3 class="menu-category-title">Beer</h3>
+    <div class="menu-item">
+      <div><div class="item-name">Efes</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Kaiaki</div><div class="item-desc">500ml</div></div>
+      <div class="item-price">9 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Karva</div><div class="item-desc">500ml</div></div>
+      <div class="item-price">9 ₾</div>
+    </div>
+    <div class="menu-item">
+      <div><div class="item-name">Heineken</div><div class="item-desc">500ml</div></div>
+      <div class="item-price">10 ₾</div>
+    </div>
+  </div>
+
+  <p class="menu-note reveal" style="margin-top:3rem;">* Prices are in Georgian Lari (₾). Please ask your server for today's specials.</p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="reveal" style="margin-bottom:3rem;">
+    <p class="section-label" data-i18n="gallery_label">Gallery</p>
+    <h2 class="section-title" data-i18n="gallery_title">Moments at<br>Fatisa</h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="gallery-cell reveal-stagger"><img src="images/interior.png" alt="Restaurant interior" loading="lazy"><span class="gallery-label" data-i18n="g1">Interior</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/breakfast.png" alt="Turkish breakfast spread" loading="lazy"><span class="gallery-label" data-i18n="g2">Breakfast</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/terrace.png" alt="Terrace dining at sunset" loading="lazy"><span class="gallery-label" data-i18n="g3">Terrace</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/pide.png" alt="Freshly baked Turkish pide" loading="lazy"><span class="gallery-label" data-i18n="g4">Pide</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/desserts.png" alt="Turkish dessert platter" loading="lazy"><span class="gallery-label" data-i18n="g5">Desserts</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/coffee.png" alt="Turkish coffee and tea" loading="lazy"><span class="gallery-label" data-i18n="g6">Coffee</span></div>
+    <div class="gallery-cell reveal-stagger"><img src="images/kitchen.png" alt="Chef at the stone oven" loading="lazy"><span class="gallery-label" data-i18n="g7">Kitchen</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-info reveal">
+    <div>
+      <p class="section-label" data-i18n="contact_label">Visit Us</p>
+      <h2 class="section-title" data-i18n="contact_title">Find<br>Fatisa</h2>
+    </div>
+    <div class="contact-block">
+      <h4 data-i18n="c_address">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Address
+      </h4>
+      <p>16 Nodar Dumbadze Street<br>Batumi 6000, Georgia</p>
+    </div>
+    <div class="contact-block">
+      <h4 data-i18n="c_hours">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Opening Hours
+      </h4>
+      <p data-i18n="c_hours_detail">Daily · 09:00 – 22:00</p>
+    </div>
+    <div class="contact-block">
+      <h4 data-i18n="c_phone">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Phone
+      </h4>
+      <a href="tel:+995557035252">+995 557 03 52 52</a>
+    </div>
+    <div class="contact-block">
+      <h4>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        Social
+      </h4>
+      <a href="https://www.instagram.com/fatisaturkishrestaurant/" target="_blank" rel="noopener" data-i18n="c_instagram">Instagram</a> &nbsp;·&nbsp;
+      <a href="https://www.facebook.com/fatisaturkishrestaurant/" target="_blank" rel="noopener" data-i18n="c_facebook">Facebook</a>
+    </div>
+  </div>
+  <div class="map-embed reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186.32575295163932!2d41.6350889788858!3d41.651160312446514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406787510bd0e795%3A0x9dd3a82833db6a22!2sFatisa%20Turkish%20Restaurant!5e0!3m2!1sen!2sin!4v1774790886305!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Fatisa Turkish Restaurant location on Google Maps"></iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Fatisa Turkish Restaurant · Batumi, Georgia</span>
+  <div style="display:flex;gap:1.5rem;">
+    <a href="#about" data-i18n="nav_about">About</a>
+    <a href="#menu" data-i18n="nav_menu">Menu</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
